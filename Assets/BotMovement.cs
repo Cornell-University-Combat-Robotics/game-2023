@@ -16,7 +16,7 @@ public class BotMovement : MonoBehaviour
   // // #TODO: Implement turning. Use the exposed turn speed field
   // // in FixedUpdate to apply turning to the game object through Rigidbody2D.
   [SerializeField]
-  public float TurnSpeed = 0f;
+  public float TurnSpeed = 45f;
 
   // Private fields.
   private Rigidbody2D _rigidBody; // reference to a rigidbody component
@@ -29,6 +29,8 @@ public class BotMovement : MonoBehaviour
     // if we need to access another component attached to the game object, 
     // we can set it to a field here. 
     _rigidBody = GetComponent<Rigidbody2D>();
+    // _rigidBody.rotation = 45f;
+
   }
 
   // Fixed update runs a fixed # of times per unit of time.
@@ -39,6 +41,13 @@ public class BotMovement : MonoBehaviour
     // not just a multiplier on speed
     _velocity = _inputDirection * Acceleration * Time.deltaTime;
     _rigidBody.MovePosition(_rigidBody.position + _velocity);
+    // _rigidBody.rotation += 1.0f;
+    if (_inputDirection != Vector2.zero)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(_inputDirection);
+            _rigidBody.MoveRotation(targetRotation);
+        }
+
   }
 
   // This function is hooked up to a Unity event, through the editor. Any time
