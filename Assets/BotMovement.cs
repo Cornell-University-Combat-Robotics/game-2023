@@ -49,4 +49,8 @@ public class BotMovement : MonoBehaviour
     // for use in FixedUpdate. 
     _inputDirection = ctx.ReadValue<Vector2>();
   }
+
+  public void AddImpactForce(Vector2 force) {
+    _rigidBody.AddForce(force);
+  }
 }
