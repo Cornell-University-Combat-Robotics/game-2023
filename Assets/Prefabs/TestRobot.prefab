@@ -227,8 +227,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0afb327d4a806d64085baee2b22a4c71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Acceleration: 5
-  TurnSpeed: 0
+  Acceleration: 50
+  TurnSpeed: 15
 --- !u!114 &4361125970280730302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,3 +288,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83be9f66c37bbc84f8469c80d4d3c2a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DashForce: 300

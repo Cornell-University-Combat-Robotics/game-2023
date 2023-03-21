@@ -7,7 +7,7 @@ public class DashAttack : Action
 
   private BotMovement _botMovement;
 
-  public int DashForce = 300;
+  public int DashForce = 1000;
 
   private void Start() {
     _botMovement = transform.parent.GetComponent<BotMovement>();
