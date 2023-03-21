@@ -15,6 +15,7 @@ public class BotMovement : MonoBehaviour
   public float Acceleration = 5f; // default value defined here
   // // #TODO: Implement turning. Use the exposed turn speed field
   // // in FixedUpdate to apply turning to the game object through Rigidbody2D.
+  // Decay for velocity over time
   [SerializeField]
   public float TurnSpeed = 0f;
 
@@ -35,10 +36,10 @@ public class BotMovement : MonoBehaviour
   // Used for handling physics interactions
   void FixedUpdate()
   {
-    // #TODO: Smooth velocity by treating acceleration as actual acceleration --
-    // not just a multiplier on speed
-    _velocity = _inputDirection * Acceleration * Time.deltaTime;
-    _rigidBody.MovePosition(_rigidBody.position + _velocity);
+    // fwd/backward froce
+    _rigidBody.AddForce(transform.up * _inputDirection.y * Acceleration);
+    // turning force
+    _rigidBody.AddTorque(-1 * _inputDirection.x * TurnSpeed);
   }
 
   // This function is hooked up to a Unity event, through the editor. Any time

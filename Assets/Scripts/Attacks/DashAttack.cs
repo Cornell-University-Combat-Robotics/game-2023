@@ -7,13 +7,15 @@ public class DashAttack : Action
 
   private BotMovement _botMovement;
 
+  public int DashForce = 300;
+
   private void Start() {
     _botMovement = transform.parent.GetComponent<BotMovement>();
   }
 
   public override void Execute()
   {
-    _botMovement.AddImpactForce(new Vector2(0, 5));
+    _botMovement.AddImpactForce(_botMovement.gameObject.transform.up * DashForce);
     Debug.Log("Pew pew");
   }
 }
