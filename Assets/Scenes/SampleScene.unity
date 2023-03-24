@@ -352,6 +352,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7331819149057640750, guid: e6a6198769250e44fb9346130ab6349a, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331819149057640750, guid: e6a6198769250e44fb9346130ab6349a, type: 3}
       propertyPath: m_Name
       value: Florence
       objectReference: {fileID: 0}
@@ -551,6 +555,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1159915324786941587, guid: 0974c89c1bdccfd4d8fbed9cf9911b61, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1159915324786941587, guid: 0974c89c1bdccfd4d8fbed9cf9911b61, type: 3}
       propertyPath: m_Name
       value: Rosie
       objectReference: {fileID: 0}
@@ -604,10 +612,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1159915324786941591, guid: 0974c89c1bdccfd4d8fbed9cf9911b61, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8652343101125372434, guid: 0974c89c1bdccfd4d8fbed9cf9911b61, type: 3}
-      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8652343101125372435, guid: 0974c89c1bdccfd4d8fbed9cf9911b61, type: 3}
