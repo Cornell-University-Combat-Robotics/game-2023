@@ -17,8 +17,11 @@ public class BotActions : MonoBehaviour
     // perform the action corresponding to the input
     if (ctx.performed)
     {
-      Debug.Log(ctx.action.name);
       Actions[_inputToActionIdx[ctx.action.name]].Execute();
+    }
+    else if (ctx.canceled)
+    {
+      Actions[_inputToActionIdx[ctx.action.name]].Unexecute();
     }
   }
 }
