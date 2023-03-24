@@ -22,6 +22,6 @@ public class MultipleTargetCamera : MonoBehaviour
         transform.position = new Vector3(targetBounds.center.x, targetBounds.center.y, -1);
         // zoom
         float newSize = Mathf.Max(targetBounds.size.x, targetBounds.size.y);
-        _camera.orthographicSize = Mathf.Max(newSize / 1.5f, 8);
+    _camera.orthographicSize = Mathf.Max(newSize / 1.5f, 5);
     }
 }

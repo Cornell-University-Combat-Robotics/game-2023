@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Actions:
-  - {fileID: 1159915325742853180}
+  - {fileID: 0}
   - {fileID: 0}
 --- !u!235 &6685568596807025066
 WheelJoint2D:
@@ -289,7 +289,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1159915325742853183}
-  - component: {fileID: 1159915325742853180}
   m_Layer: 0
   m_Name: PrimaryAttack
   m_TagString: Untagged
@@ -312,19 +311,6 @@ Transform:
   m_Father: {fileID: 1159915324786941591}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1159915325742853180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1159915325742853182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83be9f66c37bbc84f8469c80d4d3c2a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DashForce: 300
 --- !u!1 &4031731204975050364
 GameObject:
   m_ObjectHideFlags: 0

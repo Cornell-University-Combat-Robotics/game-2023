@@ -13,9 +13,13 @@ public class Spinner : MonoBehaviour
         _collider = GetComponent<Collider2D>();
     }
 
-    private void OnCollisionEnter2D(Collision2D other) {
-        Sparks.transform.position = (other.transform.position + transform.position) / 2;
-        Sparks.Play();
-    }
+
+
+  private void OnCollisionEnter2D(Collision2D other)
+  {
+    // play sparks effect
+    Sparks.transform.position = (other.transform.position + transform.position) / 2;
+    Sparks.Play();
+  }
 
 }
