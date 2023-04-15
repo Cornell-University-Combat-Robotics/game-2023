@@ -15,7 +15,9 @@ public class StevePickaxe : Action
     }
 
     public override void Execute()
+
     {
+        Debug.Log("piercing attack");
         _animator.SetBool("Piercing", true);
         StartCoroutine(TogglePickaxes());
     }
