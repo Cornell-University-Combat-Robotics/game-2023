@@ -44,8 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eee06af8b4537124c85ee3f3f72b160b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Pickaxes:
-  - {fileID: 2089169698464336740}
+  Pickaxes: []
 --- !u!1 &3822880682379117888
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,7 +263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Actions:
-  - {fileID: 0}
+  - {fileID: 5961220961834313669}
 --- !u!60 &2384577029641597116
 PolygonCollider2D:
   m_ObjectHideFlags: 0

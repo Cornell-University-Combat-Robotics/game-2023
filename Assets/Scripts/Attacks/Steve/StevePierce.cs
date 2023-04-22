@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StevePickaxe : Action
+public class StevePierce : Action
 {
 
     // references to pickaxes
@@ -17,7 +17,6 @@ public class StevePickaxe : Action
     public override void Execute()
 
     {
-        Debug.Log("piercing attack");
         _animator.SetBool("Piercing", true);
         StartCoroutine(TogglePickaxes());
     }
