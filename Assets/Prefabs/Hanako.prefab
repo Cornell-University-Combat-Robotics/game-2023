@@ -258,6 +258,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1374153796287718210}
+  - component: {fileID: 1448250977866298291}
   m_Layer: 0
   m_Name: PrimaryAttack
   m_TagString: Untagged
@@ -280,6 +281,19 @@ Transform:
   m_Father: {fileID: 1374153795128381930}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1448250977866298291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374153796287718211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841dab83ad6b8004f9afa9282bdd5200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HanakoAnimator: {fileID: 1433231308017237179}
 --- !u!1 &3817565275355738369
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,11 +497,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1905251009982196112, guid: b2a7e0d9cadbb1e46a55ef522fc59a55, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 1905251009982196112, guid: b2a7e0d9cadbb1e46a55ef522fc59a55, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.66
       objectReference: {fileID: 0}
     - target: {fileID: 1905251009982196112, guid: b2a7e0d9cadbb1e46a55ef522fc59a55, type: 3}
       propertyPath: m_LocalPosition.z
@@ -522,10 +536,6 @@ PrefabInstance:
       value: 0.782
       objectReference: {fileID: 0}
     - target: {fileID: 1905251009982196113, guid: b2a7e0d9cadbb1e46a55ef522fc59a55, type: 3}
-      propertyPath: looping
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1905251009982196113, guid: b2a7e0d9cadbb1e46a55ef522fc59a55, type: 3}
       propertyPath: ShapeModule.arc.spread
       value: 0.5
       objectReference: {fileID: 0}
@@ -542,44 +552,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1905251009982196113, guid: b2a7e0d9cadbb1e46a55ef522fc59a55, type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1905251009982196113, guid: b2a7e0d9cadbb1e46a55ef522fc59a55, type: 3}
       propertyPath: ShapeModule.randomPositionAmount
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1905251009982196113, guid: b2a7e0d9cadbb1e46a55ef522fc59a55, type: 3}
       propertyPath: ShapeModule.randomDirectionAmount
       value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1905251009982196113, guid: b2a7e0d9cadbb1e46a55ef522fc59a55, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1905251009982196113, guid: b2a7e0d9cadbb1e46a55ef522fc59a55, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.84019786
-      objectReference: {fileID: 0}
-    - target: {fileID: 1905251009982196113, guid: b2a7e0d9cadbb1e46a55ef522fc59a55, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1905251009982196113, guid: b2a7e0d9cadbb1e46a55ef522fc59a55, type: 3}
-      propertyPath: InitialModule.startColor.minColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1905251009982196113, guid: b2a7e0d9cadbb1e46a55ef522fc59a55, type: 3}
-      propertyPath: InitialModule.startColor.minColor.g
-      value: 0.23765773
-      objectReference: {fileID: 0}
-    - target: {fileID: 1905251009982196113, guid: b2a7e0d9cadbb1e46a55ef522fc59a55, type: 3}
-      propertyPath: InitialModule.startColor.minColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1905251009982196113, guid: b2a7e0d9cadbb1e46a55ef522fc59a55, type: 3}
-      propertyPath: InitialModule.startColor.minMaxState
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1905251009982196113, guid: b2a7e0d9cadbb1e46a55ef522fc59a55, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].time
