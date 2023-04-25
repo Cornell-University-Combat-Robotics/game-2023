@@ -41,6 +41,8 @@ public class RosieGlaive : Action
     _isAttached = false;
     Joint.connectedBody = null;
     // give weapon some forward force and massive torque
+    Weapon.drag = 0f;
+    Weapon.angularDrag = 0f;
     Weapon.AddForce(_launchForce * Joint.transform.up);
     Weapon.AddTorque(_launchTorque);
     // start a coroutine to reattach
