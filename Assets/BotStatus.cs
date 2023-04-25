@@ -24,8 +24,6 @@ public class BotStatus : MonoBehaviour
   public void TakeDamage(float damage)
   {
     Health -= damage;
-    // update UI
-    UI.UpdateUI();
 
     if (IsDead())
     {
@@ -33,6 +31,10 @@ public class BotStatus : MonoBehaviour
       GetComponent<SpriteRenderer>().color = Color.grey;
       GetComponent<PlayerInput>().enabled = false;
     }
+    return;
+    // TODO: reimplement later
+    // update UI
+    UI.UpdateUI();
   }
 
   public void Heal(float health)
