@@ -14,7 +14,8 @@ public class GameManager : MonoBehaviour
     public enum Robot
     {
         Rosie,
-        Florence
+        Florence,
+        Hanako
     }
 
     public struct RobotDataEntry {
@@ -35,7 +36,8 @@ public class GameManager : MonoBehaviour
     public static readonly Dictionary<Robot, RobotDataEntry> RobotData = new Dictionary<Robot, RobotDataEntry>
     {
         {Robot.Rosie, new RobotDataEntry("Rosie", "Rosie Description", "H.Spinner", "Glaive")},
-        {Robot.Florence, new RobotDataEntry("Florence", "Florence Description", "Tri.Flipper", "Table Jump")}
+        {Robot.Florence, new RobotDataEntry("Florence", "Florence Description", "Tri.Flipper", "Table Jump")},
+        {Robot.Hanako, new RobotDataEntry("Hanako", "Hanako Description", "V.Spinner", "EMP")}
     };
 
     // game manager singleton handles player data
