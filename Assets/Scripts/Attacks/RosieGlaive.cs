@@ -18,19 +18,17 @@ public class RosieGlaive : Action
 
   public IEnumerator ReattachWeapon()
   {
+    var camera = GameObject.Find("MainCamera").GetComponent<MultipleTargetCamera>();
+    camera.Targets.Add(Weapon.transform);
     Weapon.GetComponent<Collider2D>().isTrigger = true;
     yield return new WaitForSeconds(0.05f);
     Weapon.GetComponent<Collider2D>().isTrigger = false;
     yield return new WaitForSeconds(3f);
     // try to return to rosie
-    var rosieDirection = Joint.transform.position - Weapon.transform.position;
-    rosieDirection.Normalize();
-    rosieDirection *= _launchForce * 2;
-    Weapon.AddForce(rosieDirection);
-    yield return new WaitForSeconds(0.15f);
-    // Reattach
+    Weapon.transform.position = Joint.transform.position;
     Joint.connectedBody = Weapon;
     _isAttached = true;
+    camera.Targets.Remove(Weapon.transform);
   }
 
   public override void Execute()
