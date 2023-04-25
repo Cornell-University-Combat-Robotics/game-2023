@@ -5,7 +5,9 @@ using UnityEngine;
 [RequireComponent (typeof(Collider2D))]
 public class Spinner : MonoBehaviour
 {
-    public ParticleSystem Sparks;
+
+  public float Damage = 5f;// damage per contact with spinner
+  public ParticleSystem Sparks;
 
     private Collider2D _collider;
 
@@ -20,6 +22,12 @@ public class Spinner : MonoBehaviour
     // play sparks effect
     Sparks.transform.position = (other.transform.position + transform.position) / 2;
     Sparks.Play();
+    // check if there's a bot to damage
+    var botStatus = other.gameObject.GetComponent<BotStatus>();
+    if (botStatus)
+    {
+      botStatus.TakeDamage(Damage);
+    }
   }
 
 }

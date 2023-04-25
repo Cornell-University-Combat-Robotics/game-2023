@@ -5,6 +5,7 @@ using UnityEngine;
 public class FlorenceJump : Action
 {
 
+  public ParticleSystem Effects;
     private BotMovement _botMovement;
     private Animator _animator;
     private Collider2D _florenceCollider; // to disable collisions while "jumping"
@@ -23,7 +24,9 @@ public class FlorenceJump : Action
         yield return new WaitForSeconds(0.4f);
         _botMovement.ToggleControllable(true);
         _florenceCollider.isTrigger = false;
-        // emit the shockwave damage here
+    yield return new WaitForSeconds(0.2f);
+    // emit the shockwave damage here
+    Effects.Play();
     }
 
     public override void Execute()
