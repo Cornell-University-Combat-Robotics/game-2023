@@ -16,6 +16,8 @@ public class BotStatus : MonoBehaviour
   void Start()
   {
     Health = MaxHealth;
+    return;
+    // TODO: reimplement more later
     UI.UpdateUI();
   }
 

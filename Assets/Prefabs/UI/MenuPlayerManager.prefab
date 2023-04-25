@@ -96,8 +96,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 2d9c976d-0f51-43a8-9389-446ae1a27eb7
-    m_ActionName: UI/Left[/XInputControllerWindows/dpad/left,/Keyboard/a,/XInputControllerWindows/leftStick/left]
+    m_ActionId: 7fe9bd1a-9600-49fc-bc8c-1db8c759e0f2
+    m_ActionName: UI/Left[/Keyboard/a,/XInputControllerWindows/dpad/left,/USB Gamepad
+      /stick/left]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2767155044268822728}
@@ -112,8 +113,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 74055a4e-479e-4c2e-a561-6bbc02fb3130
-    m_ActionName: UI/Right[/Keyboard/d,/XInputControllerWindows/dpad/right,/XInputControllerWindows/leftStick/right]
+    m_ActionId: 0df6d5ea-08e9-4661-9009-e5b6766f95d6
+    m_ActionName: UI/Right[/Keyboard/d,/XInputControllerWindows/dpad/right,/USB Gamepad
+      /stick/right]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2767155044268822728}
@@ -128,8 +130,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 00e30b11-853a-4402-941d-0e3cabe330b7
-    m_ActionName: UI/Select[/XInputControllerWindows/buttonSouth,/Keyboard/space]
+    m_ActionId: 27d023a2-7ebc-4f14-995b-a889178aabb2
+    m_ActionName: UI/Select[/Keyboard/space,/XInputControllerWindows/buttonSouth,/USB
+      Gamepad /button4]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2767155044268822728}
@@ -144,8 +147,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: a36891e7-52c9-4a03-8b9f-c465e3c7d419
-    m_ActionName: UI/Back[/XInputControllerWindows/buttonEast,/Keyboard/escape]
+    m_ActionId: e11712a2-2636-4cbd-84d3-75b2260003c1
+    m_ActionName: UI/Back[/Keyboard/escape,/XInputControllerWindows/buttonEast,/USB
+      Gamepad /button3]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: UI
