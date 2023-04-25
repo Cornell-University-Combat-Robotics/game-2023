@@ -16,14 +16,14 @@ public class BotStatus : MonoBehaviour
   void Start()
   {
     Health = MaxHealth;
+    return;
+    // TODO: reimplement more later
     UI.UpdateUI();
   }
 
   public void TakeDamage(float damage)
   {
     Health -= damage;
-    // update UI
-    UI.UpdateUI();
 
     if (IsDead())
     {
@@ -31,6 +31,10 @@ public class BotStatus : MonoBehaviour
       GetComponent<SpriteRenderer>().color = Color.grey;
       GetComponent<PlayerInput>().enabled = false;
     }
+    return;
+    // TODO: reimplement later
+    // update UI
+    UI.UpdateUI();
   }
 
   public void Heal(float health)
