@@ -233,6 +233,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aa15a75f427d164cad36ce208c29eaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RosieSprite: {fileID: 21300000, guid: d378934f07f225c469f0e8b4984bed90, type: 3}
+  FlorenceSprite: {fileID: 21300000, guid: 9b5dfff0b77065c478410042820c27f2, type: 3}
+  SteveSprite: {fileID: 21300000, guid: aefee1ed8d76f484f99e882fb14fe05c, type: 3}
+  HanakoSprite: {fileID: 21300000, guid: 1bd23e10fe51fd642b04677da2b336f3, type: 3}
 --- !u!4 &746513431
 Transform:
   m_ObjectHideFlags: 0

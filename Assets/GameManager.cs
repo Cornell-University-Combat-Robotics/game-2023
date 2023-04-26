@@ -24,23 +24,25 @@ public class GameManager : MonoBehaviour
         public string Description;
         public string PrimaryAttack;
         public string SecondaryAttack;
+        public Sprite Sprite;
 
-        public RobotDataEntry(string name, string description, string primaryAttack, string secondaryAttack)
+        public RobotDataEntry(string name, string description, string primaryAttack, string secondaryAttack, Sprite sprite)
         {
             Name = name;
             Description = description;
             PrimaryAttack = primaryAttack;
             SecondaryAttack = secondaryAttack;
+            Sprite = sprite;
         }
     }
 
-    public static readonly Dictionary<Robot, RobotDataEntry> RobotData = new Dictionary<Robot, RobotDataEntry>
-    {
-        {Robot.Rosie, new RobotDataEntry("Rosie", "Rosie Description", "H.Spinner", "Glaive")},
-        {Robot.Florence, new RobotDataEntry("Florence", "Florence Description", "Tri.Flipper", "Table Jump")},
-        {Robot.Steve, new RobotDataEntry("Steve", "Steve Description", "Mine", "Craft")},
-        {Robot.Hanako, new RobotDataEntry("Hanako", "Hanako Description", "V.Spinner", "EMP")}
-    };
+    // we need to set the sprites in the editor manually
+    public Sprite RosieSprite;
+    public Sprite FlorenceSprite;
+    public Sprite SteveSprite;
+    public Sprite HanakoSprite;
+
+    public static Dictionary<Robot, RobotDataEntry> RobotData;
 
     // game manager singleton handles player data
     public static GameManager Instance;
@@ -79,6 +81,15 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
         PlayerData = new Dictionary<int, PlayerConfig>();
+        // initialize robotdata
+        RobotData = new Dictionary<Robot, RobotDataEntry>
+        {
+            {Robot.Rosie, new RobotDataEntry("Rosie", "Rosie Description", "H.Spinner", "Glaive", RosieSprite)},
+            {Robot.Florence, new RobotDataEntry("Florence", "Florence Description", "Tri.Flipper", "Table Jump", FlorenceSprite)},
+            {Robot.Steve, new RobotDataEntry("Steve", "Steve Description", "Mine", "Craft", SteveSprite)},
+            {Robot.Hanako, new RobotDataEntry("Hanako", "Hanako Description", "V.Spinner", "EMP", HanakoSprite)}
+        };
+
         DontDestroyOnLoad(gameObject);
     }
 

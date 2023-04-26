@@ -9,6 +9,8 @@ public class PlayerSpawner : MonoBehaviour
     public GameObject RosiePrefab;
     public GameObject FlorencePrefab;
     public GameObject HanakoPrefab;
+    public GameObject StevePrefab;
+
 
     private Dictionary<GameManager.Robot, GameObject> robotPrefabs;
     // ... and so on. TODO: make this better.
@@ -18,8 +20,9 @@ public class PlayerSpawner : MonoBehaviour
         robotPrefabs =
         new Dictionary<GameManager.Robot, GameObject> {
             {GameManager.Robot.Rosie, RosiePrefab},
-            {GameManager.Robot.Florence, FlorencePrefab}  
-            {GameManager.Robot.Hanako, HanakoPrefab}          
+            {GameManager.Robot.Florence, FlorencePrefab},
+            {GameManager.Robot.Hanako, HanakoPrefab},     
+            {GameManager.Robot.Steve, StevePrefab}     
         };
     }
 

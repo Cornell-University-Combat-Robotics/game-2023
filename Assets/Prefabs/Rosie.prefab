@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Acceleration: 50
-  TurnSpeed: 15
+  TurnSpeed: 35
 --- !u!114 &1159915324786941674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,6 +375,7 @@ GameObject:
   - component: {fileID: 8513828442098530234}
   - component: {fileID: 329722602094441665}
   - component: {fileID: 7180947021005469997}
+  - component: {fileID: 6198152115298853618}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Untagged
@@ -501,6 +502,20 @@ PolygonCollider2D:
       - {x: 0.28266215, y: -0.44838762}
       - {x: 0.100500345, y: -0.21178842}
       - {x: 0.118193865, y: 0.4635682}
+--- !u!114 &6198152115298853618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4031731204975050364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d49f4f00d20421429c504941743a4e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 5
+  Sparks: {fileID: 8652343101125372435}
 --- !u!1 &8283477874315272319
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,5 +642,10 @@ PrefabInstance:
 --- !u!4 &8652343101125372434 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1905251009982196112, guid: b2a7e0d9cadbb1e46a55ef522fc59a55, type: 3}
+  m_PrefabInstance: {fileID: 7089654856948925314}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8652343101125372435 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1905251009982196113, guid: b2a7e0d9cadbb1e46a55ef522fc59a55, type: 3}
   m_PrefabInstance: {fileID: 7089654856948925314}
   m_PrefabAsset: {fileID: 0}

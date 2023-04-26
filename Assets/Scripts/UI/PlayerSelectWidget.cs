@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public class PlayerSelectWidget : MonoBehaviour
 {
 
-  private GameManager.Robot[] OrderedRobots = {GameManager.Robot.Rosie, GameManager.Robot.Florence};
+  private GameManager.Robot[] OrderedRobots = {GameManager.Robot.Rosie, GameManager.Robot.Florence, GameManager.Robot.Hanako, GameManager.Robot.Steve};
 
   public int PlayerID = -1;
 
@@ -18,6 +18,7 @@ public class PlayerSelectWidget : MonoBehaviour
   public Text PlayerIDLabel;
   public Text RobotNameLabel;
   public Text RobotDescLabel;
+  public Image RobotIcon;
   public Text PrimaryAttackLabel;
   public Text SecondaryAttackLabel;
   public Image PlayerNumPanel;
@@ -39,6 +40,7 @@ public class PlayerSelectWidget : MonoBehaviour
     PlayerIDLabel.text = "P" + (PlayerID + 1).ToString();
     PlayerNumPanel.color = GameManager.PlayerColors[PlayerID];
     RobotNameLabel.text = GameManager.RobotData[selectedRobot].Name;
+    RobotIcon.sprite = GameManager.RobotData[selectedRobot].Sprite;
     RobotDescLabel.text = GameManager.RobotData[selectedRobot].Description;
     PrimaryAttackLabel.text = GameManager.RobotData[selectedRobot].PrimaryAttack;
     SecondaryAttackLabel.text = GameManager.RobotData[selectedRobot].SecondaryAttack;

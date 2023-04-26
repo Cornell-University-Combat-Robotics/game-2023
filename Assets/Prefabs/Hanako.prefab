@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1374153795128381929}
   - component: {fileID: 1374153795128381847}
   - component: {fileID: 7146039376443321447}
+  - component: {fileID: 6565973922053063796}
   m_Layer: 0
   m_Name: Hanako
   m_TagString: Untagged
@@ -265,6 +266,21 @@ PolygonCollider2D:
       - {x: 0.99225473, y: 0.43272853}
       - {x: -0.99624, y: 0.43342257}
       - {x: -0.99694514, y: -1.0102911}
+--- !u!114 &6565973922053063796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374153795128381934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53651e8b92d2c1346bcc00342511093c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UI: {fileID: 0}
+  PlayerID: -1
+  MaxHealth: 100
 --- !u!1 &1374153796287718211
 GameObject:
   m_ObjectHideFlags: 0

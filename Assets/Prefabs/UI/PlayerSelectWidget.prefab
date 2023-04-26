@@ -407,9 +407,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerID: 0
   SelectedRobotIdx: 0
+  SelectionController: {fileID: 0}
   PlayerIDLabel: {fileID: 3204519220331440192}
   RobotNameLabel: {fileID: 6403735462647601739}
   RobotDescLabel: {fileID: 6485030439106763383}
+  RobotIcon: {fileID: 6973222387341975102}
   PrimaryAttackLabel: {fileID: 7839927760282472340}
   SecondaryAttackLabel: {fileID: 5201829403567794094}
   PlayerNumPanel: {fileID: 2941810998921256149}

@@ -1027,3 +1027,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RosiePrefab: {fileID: 1159915324786941587, guid: 0974c89c1bdccfd4d8fbed9cf9911b61, type: 3}
   FlorencePrefab: {fileID: 7331819149057640750, guid: e6a6198769250e44fb9346130ab6349a, type: 3}
+  HanakoPrefab: {fileID: 1374153795128381934, guid: 76549eb0fe9342e45a81da8225412669, type: 3}
+  StevePrefab: {fileID: 3822880682379117888, guid: 8c986b64274a136489e2bb539d54ebec, type: 3}
