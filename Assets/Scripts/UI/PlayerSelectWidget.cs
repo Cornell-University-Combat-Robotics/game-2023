@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public class PlayerSelectWidget : MonoBehaviour
 {
 
-  private GameManager.Robot[] OrderedRobots = {GameManager.Robot.Rosie, GameManager.Robot.Florence};
+  private GameManager.Robot[] OrderedRobots = { GameManager.Robot.Rosie, GameManager.Robot.Florence, GameManager.Robot.Hanako };
 
   public int PlayerID = -1;
 
