@@ -11,7 +11,6 @@ public class PlayerSpawner : MonoBehaviour
     public GameObject HanakoPrefab;
     public GameObject StevePrefab;
 
-
     private Dictionary<GameManager.Robot, GameObject> robotPrefabs;
     // ... and so on. TODO: make this better.
     
@@ -20,9 +19,9 @@ public class PlayerSpawner : MonoBehaviour
         robotPrefabs =
         new Dictionary<GameManager.Robot, GameObject> {
             {GameManager.Robot.Rosie, RosiePrefab},
-            {GameManager.Robot.Florence, FlorencePrefab},
-            {GameManager.Robot.Hanako, HanakoPrefab},     
-            {GameManager.Robot.Steve, StevePrefab}     
+            {GameManager.Robot.Florence, FlorencePrefab},  
+            {GameManager.Robot.Hanako, HanakoPrefab},          
+            {GameManager.Robot.Steve, StevePrefab}          
         };
     }
 
@@ -31,9 +30,11 @@ public class PlayerSpawner : MonoBehaviour
         // spawn all players according to data
         foreach (var entry in GameManager.Instance.PlayerData)
         {
+      var playerID = entry.Key;
             var config = entry.Value;
             // spawn instance of correct robot
             var robotPrefab = Instantiate(robotPrefabs[config.robot]);
+      robotPrefab.transform.position = GameObject.Find("SpawnPoints").transform.GetChild(playerID).position;
             // set it up to be tracked by the camera
             mainCamera.Targets.Add(robotPrefab.transform);
         }

@@ -419,6 +419,26 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 467624a7-143c-4de6-938e-0b976e7bc342
     m_ActionName: Bot/Secondary Attack[/Keyboard/f]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7fe9bd1a-9600-49fc-bc8c-1db8c759e0f2
+    m_ActionName: UI/Left[/Keyboard/a,/XInputControllerWindows/dpad/left,/USB Gamepad
+      /stick/left]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 0df6d5ea-08e9-4661-9009-e5b6766f95d6
+    m_ActionName: UI/Right[/Keyboard/d,/XInputControllerWindows/dpad/right,/USB Gamepad
+      /stick/right]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 27d023a2-7ebc-4f14-995b-a889178aabb2
+    m_ActionName: UI/Select[/Keyboard/space,/XInputControllerWindows/buttonSouth,/USB
+      Gamepad /button4]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e11712a2-2636-4cbd-84d3-75b2260003c1
+    m_ActionName: UI/Back[/Keyboard/escape,/XInputControllerWindows/buttonEast,/USB
+      Gamepad /button3]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Bot
@@ -5548,7 +5568,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: af946c0ce7fb65548bafe6b0f096c8d6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7767fb621da4e8a4baba7a5ffd8dd745, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5599,6 +5619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb4c81fe0619cc46b316bf8cf0b2adf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipperDamage: 10
   FlipperForce: 2000
   FlipperTorqueNoise: 100
 --- !u!1 &8688042376645273656
@@ -5676,7 +5697,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: af946c0ce7fb65548bafe6b0f096c8d6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ab48c9ff5efbd924097b2f649afc68a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5727,6 +5748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb4c81fe0619cc46b316bf8cf0b2adf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipperDamage: 10
   FlipperForce: 2000
   FlipperTorqueNoise: 100
 --- !u!1 &8688042377682749311
@@ -5921,5 +5943,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb4c81fe0619cc46b316bf8cf0b2adf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipperDamage: 10
   FlipperForce: 2000
   FlipperTorqueNoise: 100
