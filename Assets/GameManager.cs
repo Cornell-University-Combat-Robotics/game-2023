@@ -15,7 +15,8 @@ public class GameManager : MonoBehaviour
     {
         Rosie,
         Florence,
-        Steve
+        Steve,
+        Hanako
     }
 
     public struct RobotDataEntry {
@@ -37,7 +38,8 @@ public class GameManager : MonoBehaviour
     {
         {Robot.Rosie, new RobotDataEntry("Rosie", "Rosie Description", "H.Spinner", "Glaive")},
         {Robot.Florence, new RobotDataEntry("Florence", "Florence Description", "Tri.Flipper", "Table Jump")},
-        {Robot.Steve, new RobotDataEntry("Steve", "Steve Description", "Mine", "Craft")}
+        {Robot.Steve, new RobotDataEntry("Steve", "Steve Description", "Mine", "Craft")},
+        {Robot.Hanako, new RobotDataEntry("Hanako", "Hanako Description", "V.Spinner", "EMP")}
     };
 
     // game manager singleton handles player data
