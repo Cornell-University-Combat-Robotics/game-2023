@@ -16,7 +16,7 @@ public class PlayerSpawner : MonoBehaviour
     // ... and so on. TODO: make this better.
     
     private void Awake() {
-        // sert up prefab dict
+        // set up prefab dict
         robotPrefabs =
         new Dictionary<GameManager.Robot, GameObject> {
             {GameManager.Robot.Rosie, RosiePrefab},
@@ -33,17 +33,18 @@ public class PlayerSpawner : MonoBehaviour
         {
             var playerID = entry.Key;
             var config = entry.Value;
-            // spawn instance of correct robot
             var input = config.device;
-            var robotPrefab = PlayerInput.Instantiate(robotPrefabs[config.robot], pairWithDevice: input);
-            robotPrefab.transform.position = GameObject.Find("SpawnPoints").transform.GetChild(playerID).position;
+            // spawn instance of correct robot
             // set up proper input device
+            var robotPrefab = PlayerInput.Instantiate(robotPrefabs[config.robot], pairWithDevice: input);
+            robotPrefab.GetComponent<BotStatus>().PlayerID = playerID;
+            robotPrefab.transform.position = GameObject.Find("SpawnPoints").transform.GetChild(playerID).position;
             // give it a UI element
-            var playerUIElement = GameObject.Find("GameSceneUI").transform.GetChild(playerID).GetComponent<PlayerUI>(); 
+            var playerUIElement = GameObject.Find("PlayerUIs").transform.GetChild(playerID).GetComponent<PlayerUI>(); 
             playerUIElement.gameObject.SetActive(true);
             playerUIElement.Status = robotPrefab.GetComponent<BotStatus>();
             robotPrefab.GetComponent<BotStatus>().UI = playerUIElement;
-            playerUIElement.UpdateUI();
+            GameObject.Find("MatchController").GetComponent<MatchController>().RegisterPlayerAlive(playerID);
             // set it up to be tracked by the camera
             mainCamera.Targets.Add(robotPrefab.transform);
         }

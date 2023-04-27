@@ -101,4 +101,12 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("GameScene");
     }
+
+    public void BackToMenu()
+    {
+        // back to menu
+        SceneManager.LoadScene("MainMenu");
+        // clear players
+        PlayerData.Clear();
+    }
 }

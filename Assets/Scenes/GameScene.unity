@@ -363,6 +363,26 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4043052054861412940, guid: 9652a9b3e1d45d94f9a1936d73b9c68c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 431.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 5855118859113709370, guid: 9652a9b3e1d45d94f9a1936d73b9c68c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5994073103447615978, guid: 9652a9b3e1d45d94f9a1936d73b9c68c, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5994073103447615978, guid: 9652a9b3e1d45d94f9a1936d73b9c68c, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5994073103447615978, guid: 9652a9b3e1d45d94f9a1936d73b9c68c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8585886239707708200, guid: 9652a9b3e1d45d94f9a1936d73b9c68c, type: 3}
       propertyPath: m_Name
       value: 3
@@ -445,6 +465,50 @@ MonoBehaviour:
   FlorencePrefab: {fileID: 7331819149057640750, guid: e6a6198769250e44fb9346130ab6349a, type: 3}
   HanakoPrefab: {fileID: 1374153795128381934, guid: 76549eb0fe9342e45a81da8225412669, type: 3}
   StevePrefab: {fileID: 3822880682379117888, guid: 8c986b64274a136489e2bb539d54ebec, type: 3}
+--- !u!1 &2037272725
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2037272727}
+  - component: {fileID: 2037272726}
+  m_Layer: 0
+  m_Name: MatchController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2037272726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037272725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 492c4a4ff4fc3b74b92b465f2c4f03a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2037272727
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037272725}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 559.91656, y: 425.71555, z: 2.8456292}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &502577504449662522
 PrefabInstance:
   m_ObjectHideFlags: 0
