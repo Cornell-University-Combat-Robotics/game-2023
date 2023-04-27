@@ -234,8 +234,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RosieSprite: {fileID: 21300000, guid: d378934f07f225c469f0e8b4984bed90, type: 3}
   FlorenceSprite: {fileID: 21300000, guid: 9b5dfff0b77065c478410042820c27f2, type: 3}
-  SteveSprite: {fileID: 21300000, guid: aefee1ed8d76f484f99e882fb14fe05c, type: 3}
-  HanakoSprite: {fileID: 21300000, guid: 1bd23e10fe51fd642b04677da2b336f3, type: 3}
+  SteveSprite: {fileID: 21300000, guid: ed3ae5217b57e6f4fa46461ff17d0ec2, type: 3}
+  HanakoSprite: {fileID: 21300000, guid: 92038c34bf0ab2f4e9c150853f8856bf, type: 3}
 --- !u!4 &746513431
 Transform:
   m_ObjectHideFlags: 0

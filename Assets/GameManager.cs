@@ -87,10 +87,10 @@ public class GameManager : MonoBehaviour
         // initialize robotdata
         RobotData = new Dictionary<Robot, RobotDataEntry>
         {
-            {Robot.Rosie, new RobotDataEntry("Rosie", "Rosie Description", "H.Spinner", "Glaive", RosieSprite)},
-            {Robot.Florence, new RobotDataEntry("Florence", "Florence Description", "Tri.Flipper", "Table Jump", FlorenceSprite)},
-            {Robot.Steve, new RobotDataEntry("Steve", "Steve Description", "Mine", "Craft", SteveSprite)},
-            {Robot.Hanako, new RobotDataEntry("Hanako", "Hanako Description", "V.Spinner", "EMP", HanakoSprite)}
+            {Robot.Rosie, new RobotDataEntry("Rosie", "Horizontal spinner with a floral flourish. Rosie uses AR500 steel spinner to destroy opponents both close-up and long range.", "H.Spinner", "Glaive", RosieSprite)},
+            {Robot.Florence, new RobotDataEntry("Florence", "Two wheeled tri-flipper floppy queen. Florence uses flippers to gain height over opponents.", "Tri.Flipper", "Table Jump", FlorenceSprite)},
+            {Robot.Steve, new RobotDataEntry("Steve", "Fierce bot wielding two pickaxes inspired by a certain game about blocks. Steve's pickaxes pierce through everything.", "Mine", "Craft", SteveSprite)},
+            {Robot.Hanako, new RobotDataEntry("Hanako", "Ghosty blue bot with four side-by-side vertical saws. Hanako keeps opponents close to their saws.", "V.Spinner", "EMP", HanakoSprite)}
         };
 
         DontDestroyOnLoad(gameObject);
