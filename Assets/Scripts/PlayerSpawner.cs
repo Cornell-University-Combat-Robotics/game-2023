@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerSpawner : MonoBehaviour
 {
@@ -30,11 +31,19 @@ public class PlayerSpawner : MonoBehaviour
         // spawn all players according to data
         foreach (var entry in GameManager.Instance.PlayerData)
         {
-      var playerID = entry.Key;
+            var playerID = entry.Key;
             var config = entry.Value;
             // spawn instance of correct robot
-            var robotPrefab = Instantiate(robotPrefabs[config.robot]);
-      robotPrefab.transform.position = GameObject.Find("SpawnPoints").transform.GetChild(playerID).position;
+            var input = config.device;
+            var robotPrefab = PlayerInput.Instantiate(robotPrefabs[config.robot], pairWithDevice: input);
+            robotPrefab.transform.position = GameObject.Find("SpawnPoints").transform.GetChild(playerID).position;
+            // set up proper input device
+            // give it a UI element
+            var playerUIElement = GameObject.Find("GameSceneUI").transform.GetChild(playerID).GetComponent<PlayerUI>(); 
+            playerUIElement.gameObject.SetActive(true);
+            playerUIElement.Status = robotPrefab.GetComponent<BotStatus>();
+            robotPrefab.GetComponent<BotStatus>().UI = playerUIElement;
+            playerUIElement.UpdateUI();
             // set it up to be tracked by the camera
             mainCamera.Targets.Add(robotPrefab.transform);
         }
