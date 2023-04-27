@@ -13,8 +13,12 @@ public class MenuPlayerManager : MonoBehaviour
   private PlayerSelectWidget _widget;
 
   private void Awake() {
+    // get the correct input
+    // var input = InputSystem.devices[InputSystem.devices.Count - 1];
+    var input = GetComponent<PlayerInput>().devices[0];
     // on spawn, configure ID based on number of players joined
-    PlayerID = GameManager.Instance.AddPlayer();
+    PlayerID = GameManager.Instance.AddPlayer(input);
+    Debug.Log(input);
     // get refernce to the proper UI widget
     _widget = GameObject.Find("PlayerUIs").transform.GetChild(PlayerID).GetComponent<PlayerSelectWidget>();
   }

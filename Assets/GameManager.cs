@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -52,10 +53,12 @@ public class GameManager : MonoBehaviour
     public class PlayerConfig 
     {
         public Robot robot;
+        public InputDevice device;
 
-        public PlayerConfig()
+        public PlayerConfig(InputDevice input)
         {
             this.robot = Robot.Rosie;
+            this.device = input;
         }
     }
 
@@ -67,10 +70,10 @@ public class GameManager : MonoBehaviour
 
     // used to communicate that a player has been added
     // returns that player's ID
-    public int AddPlayer()
+    public int AddPlayer(InputDevice input)
     {
         int id = NumPlayers();
-        PlayerData.Add(id, new PlayerConfig());
+        PlayerData.Add(id, new PlayerConfig(input));
         // activate that player's UI
         GameObject playerUI = GameObject.Find("PlayerUIs").transform.GetChild(id).gameObject;
         playerUI.SetActive(true);
