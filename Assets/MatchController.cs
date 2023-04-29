@@ -38,8 +38,8 @@ public class MatchController : MonoBehaviour
         }
         if (numAlive <= 1)
         {
-            // show win screen
-            GameObject.Find("WinScreen").GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 140);
+      // show win screen
+      GameObject.Find("WinScreen").GetComponent<RectTransform>().anchoredPosition = new Vector2(0, -140);
             GameObject.Find("WinScreen").GetComponent<WinScreen>().UpdateWinner(lastLivingID);
             // start back to menu sequence
             StartCoroutine(_backToMenu());

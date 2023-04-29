@@ -516,6 +516,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 925993987651422864, guid: 093f9c7d72ef7ee4b95c5312694e1015, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 5791346119979274329, guid: 093f9c7d72ef7ee4b95c5312694e1015, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6227400939920073305, guid: 093f9c7d72ef7ee4b95c5312694e1015, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -530,7 +538,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6227400939920073305, guid: 093f9c7d72ef7ee4b95c5312694e1015, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.3012695
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6227400939920073305, guid: 093f9c7d72ef7ee4b95c5312694e1015, type: 3}
       propertyPath: m_LocalRotation.w
@@ -563,6 +571,10 @@ PrefabInstance:
     - target: {fileID: 6984166285480493470, guid: 093f9c7d72ef7ee4b95c5312694e1015, type: 3}
       propertyPath: m_Name
       value: HLNRArena
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984166285480493470, guid: 093f9c7d72ef7ee4b95c5312694e1015, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 093f9c7d72ef7ee4b95c5312694e1015, type: 3}
