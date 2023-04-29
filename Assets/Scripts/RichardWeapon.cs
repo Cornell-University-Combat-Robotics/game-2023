@@ -6,12 +6,12 @@ public class RichardWeapon : Action
 {
 
     [SerializeField]
-    public Animator RichardAnimator;
+    public Animator Richard;
 
     // Start is called before the first frame update
     private void Start()
     {
-        
+        Debug.Log("Hello");
     }
 
     // Update is called once per frame
@@ -22,11 +22,15 @@ public class RichardWeapon : Action
 
     public override void Execute()
     {
-        RichardAnimator.SetBool("Activate Weapon", true);
+        Debug.Log("Activating weapon");
+        Richard.SetBool("Activate Weapon", true);
+        
     }
 
     public override void Unexecute()
     {
-        RichardAnimator.SetBool("Activate Weapon", false);
+        Debug.Log("Deactivating weapon");
+        Richard.SetBool("Activate Weapon", false);
+        
     }
 }
