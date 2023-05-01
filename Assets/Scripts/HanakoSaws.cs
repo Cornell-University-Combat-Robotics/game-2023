@@ -7,26 +7,17 @@ public class HanakoSaws : Action
 
     [SerializeField]
     public Animator HanakoAnimator;
-
-    // Start is called before the first frame update
-    private void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  public Spinner Saws;
 
     public override void Execute()
     {
+    Saws.SpinnerActive = true;
         HanakoAnimator.SetBool("Activate Weapon", true);
     }
 
     public override void Unexecute()
     {
+    Saws.SpinnerActive = false;
         HanakoAnimator.SetBool("Activate Weapon", false);
     }
 }

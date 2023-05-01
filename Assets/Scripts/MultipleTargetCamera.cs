@@ -31,7 +31,7 @@ public class MultipleTargetCamera : MonoBehaviour
         _targetSize = Mathf.Max(targetBounds.size.x, targetBounds.size.y);
         _camera.orthographicSize = Mathf.Max(
             Mathf.Lerp(_camera.orthographicSize, _targetSize, 0.3f) / 1.2f,
-            5
+            8
         );
     }
 }
