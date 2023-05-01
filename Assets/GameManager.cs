@@ -28,7 +28,8 @@ public class GameManager : MonoBehaviour
         Rosie,
         Florence,
         Steve,
-        Hanako
+        Hanako,
+        Richard
     }
 
     public struct RobotDataEntry {
@@ -53,6 +54,7 @@ public class GameManager : MonoBehaviour
     public Sprite FlorenceSprite;
     public Sprite SteveSprite;
     public Sprite HanakoSprite;
+    public Sprite RichardSprite;
 
     public static Dictionary<Robot, RobotDataEntry> RobotData;
 
@@ -98,7 +100,8 @@ public class GameManager : MonoBehaviour
             {Robot.Rosie, new RobotDataEntry("Rosie", "Horizontal spinner with a floral flourish. Rosie uses AR500 steel spinner to destroy opponents both close-up and long range.", "H.Spinner", "Glaive", RosieSprite)},
             {Robot.Florence, new RobotDataEntry("Florence", "Two wheeled tri-flipper floppy queen. Florence uses flippers to gain height over opponents.", "Tri.Flipper", "Table Jump", FlorenceSprite)},
             {Robot.Steve, new RobotDataEntry("Steve", "Fierce bot wielding two pickaxes inspired by a certain game about blocks. Steve's pickaxes pierce through everything.", "Mine", "Craft", SteveSprite)},
-            {Robot.Hanako, new RobotDataEntry("Hanako", "Ghosty blue bot with four side-by-side vertical saws. Hanako keeps opponents close to their saws.", "V.Spinner", "Ghostly Warp", HanakoSprite)}
+            {Robot.Hanako, new RobotDataEntry("Hanako", "Ghosty blue bot with four side-by-side vertical saws. Hanako keeps opponents close to their saws.", "V.Spinner", "Ghostly Warp", HanakoSprite)},
+            {Robot.Richard, new RobotDataEntry("Richard", "Fiery orange striped vertical spinner. Richard channels the energy of an angry tiger", "V.Spinner", "Tiger trap", RichardSprite)}
         };
 
         DontDestroyOnLoad(gameObject);
