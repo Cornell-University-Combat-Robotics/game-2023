@@ -7,7 +7,10 @@ public class Pickaxe : MonoBehaviour
 {
 
     public int PickaxeForce = 1500;
+    public int PickaxeDamage = 25;
     public int PickaxeTorqueNoise = 100;
+
+    private bool pickaxeEnabled = false;
 
     private Collider2D _collider;
 
@@ -17,11 +20,12 @@ public class Pickaxe : MonoBehaviour
     }
 
     public void TogglePickaxe(bool enabled) {
-        print(enabled);
+        print("Togglgin pciks");
         _collider.enabled = enabled;
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
+        Debug.Log("PICKED");
         var otherBotMovement = other.GetComponent<BotMovement>();
         if (otherBotMovement)
         {
@@ -30,6 +34,12 @@ public class Pickaxe : MonoBehaviour
             otherBotMovement.AddImpactForce(force);
             var torque = Random.Range(-1, 1) * PickaxeTorqueNoise;
             otherBotMovement.AddImpactTorque(torque);
+        }
+        // deal damage
+        var otherBotStatus = other.GetComponent<BotStatus>();
+        if (otherBotStatus)
+        {
+        otherBotStatus.TakeDamage(PickaxeDamage);
         }
      }
 }

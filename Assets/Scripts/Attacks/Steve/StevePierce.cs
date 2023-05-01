@@ -8,6 +8,8 @@ public class StevePierce : Action
     // references to pickaxes
     public List<Pickaxe> Pickaxes;
 
+    public ParticleSystem PierceEffect;
+
     private Animator _animator;
 
     private void Start() {
@@ -17,16 +19,20 @@ public class StevePierce : Action
     public override void Execute()
 
     {
-        _animator.SetBool("Piercing", true);
         StartCoroutine(TogglePickaxes());
+        _animator.SetBool("Piercing", true);
     }
 
     IEnumerator TogglePickaxes()
     {
+        // delay the pick drop w/ animation
+        yield return new WaitForSeconds(0.4f);
         foreach (Pickaxe pickaxe in Pickaxes)
         {
             pickaxe.TogglePickaxe(true);
         }
+        // play effect
+        PierceEffect.Play();
         yield return new WaitForFixedUpdate();
         foreach (Pickaxe pickaxe in Pickaxes)
         {

@@ -189,6 +189,26 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 467624a7-143c-4de6-938e-0b976e7bc342
     m_ActionName: Bot/Secondary Attack[/Keyboard/f]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7fe9bd1a-9600-49fc-bc8c-1db8c759e0f2
+    m_ActionName: UI/Left[/Keyboard/a,/XInputControllerWindows/dpad/left,/USB Gamepad
+      /stick/left]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 0df6d5ea-08e9-4661-9009-e5b6766f95d6
+    m_ActionName: UI/Right[/Keyboard/d,/XInputControllerWindows/dpad/right,/USB Gamepad
+      /stick/right]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 27d023a2-7ebc-4f14-995b-a889178aabb2
+    m_ActionName: UI/Select[/Keyboard/space,/XInputControllerWindows/buttonSouth,/USB
+      Gamepad /button4]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e11712a2-2636-4cbd-84d3-75b2260003c1
+    m_ActionName: UI/Back[/Keyboard/escape,/XInputControllerWindows/buttonEast,/USB
+      Gamepad /button3]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: Bot
@@ -207,7 +227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Acceleration: 50
-  TurnSpeed: 15
+  TurnSpeed: 35
 --- !u!114 &1159915324786941674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,8 +241,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Actions:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 4061442222218541470}
+  - {fileID: 7246845497859833376}
 --- !u!235 &6685568596807025066
 WheelJoint2D:
   m_ObjectHideFlags: 0
@@ -306,6 +326,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1159915325742853183}
+  - component: {fileID: 4061442222218541470}
   m_Layer: 0
   m_Name: PrimaryAttack
   m_TagString: Untagged
@@ -328,6 +349,20 @@ Transform:
   m_Father: {fileID: 1159915324786941591}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4061442222218541470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159915325742853182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7816cf30c55316443be60d2c5996a8fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpinnerMotor: {fileID: 6685568596807025066}
+  SpinnerSpeed: 2000
 --- !u!1 &4031731204975050364
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,6 +375,7 @@ GameObject:
   - component: {fileID: 8513828442098530234}
   - component: {fileID: 329722602094441665}
   - component: {fileID: 7180947021005469997}
+  - component: {fileID: 6198152115298853618}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Untagged
@@ -466,6 +502,20 @@ PolygonCollider2D:
       - {x: 0.28266215, y: -0.44838762}
       - {x: 0.100500345, y: -0.21178842}
       - {x: 0.118193865, y: 0.4635682}
+--- !u!114 &6198152115298853618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4031731204975050364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d49f4f00d20421429c504941743a4e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 5
+  Sparks: {fileID: 8652343101125372435}
 --- !u!1 &8283477874315272319
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,6 +614,14 @@ PrefabInstance:
       value: 0.782
       objectReference: {fileID: 0}
     - target: {fileID: 1905251009982196113, guid: b2a7e0d9cadbb1e46a55ef522fc59a55, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1905251009982196113, guid: b2a7e0d9cadbb1e46a55ef522fc59a55, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1905251009982196113, guid: b2a7e0d9cadbb1e46a55ef522fc59a55, type: 3}
       propertyPath: SizeModule.separateAxes
       value: 0
       objectReference: {fileID: 0}
@@ -584,5 +642,10 @@ PrefabInstance:
 --- !u!4 &8652343101125372434 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1905251009982196112, guid: b2a7e0d9cadbb1e46a55ef522fc59a55, type: 3}
+  m_PrefabInstance: {fileID: 7089654856948925314}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8652343101125372435 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1905251009982196113, guid: b2a7e0d9cadbb1e46a55ef522fc59a55, type: 3}
   m_PrefabInstance: {fileID: 7089654856948925314}
   m_PrefabAsset: {fileID: 0}
