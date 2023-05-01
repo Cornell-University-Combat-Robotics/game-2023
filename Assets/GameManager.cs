@@ -11,8 +11,18 @@ public class GameManager : MonoBehaviour
 
     public static readonly Color[] PlayerColors = {Color.red, Color.blue, Color.green, Color.yellow};
 
-    // store data on all the robots
-    public enum Robot
+  public enum Stage
+  {
+    HLNR,
+    TestBox,
+    TestLabyrinth,
+    MannysDomain
+  }
+
+  public Stage CurrentStage;
+
+  // store data on all the robots
+  public enum Robot
     {
         Rosie,
         Florence,
@@ -73,10 +83,7 @@ public class GameManager : MonoBehaviour
     public int AddPlayer(InputDevice input)
     {
         int id = NumPlayers();
-        PlayerData.Add(id, new PlayerConfig(input));
-        // activate that player's UI
-        GameObject playerUI = GameObject.Find("PlayerUIs").transform.GetChild(id).gameObject;
-        playerUI.SetActive(true);
+    PlayerData.Add(id, new PlayerConfig(input));
         return id;
     }
 
