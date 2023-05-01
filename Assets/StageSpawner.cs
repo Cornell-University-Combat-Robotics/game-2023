@@ -8,6 +8,7 @@ public class StageSpawner : MonoBehaviour
   [SerializeField]
   public GameObject HLNRPrefab;
   public GameObject TestBoxPrefab;
+  public GameObject LanceStagePrefab;
 
   public Dictionary<GameManager.Stage, GameObject> StageToPrefab;
 
@@ -16,7 +17,8 @@ public class StageSpawner : MonoBehaviour
     StageToPrefab = new Dictionary<GameManager.Stage, GameObject>()
     {
             { GameManager.Stage.HLNR, HLNRPrefab },
-            { GameManager.Stage.TestBox, TestBoxPrefab}
+            { GameManager.Stage.TestBox, TestBoxPrefab},
+            { GameManager.Stage.LanceStage, LanceStagePrefab}
     };
     Instantiate(StageToPrefab[GameManager.Instance.CurrentStage]);
   }

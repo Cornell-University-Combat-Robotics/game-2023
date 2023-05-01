@@ -32,7 +32,7 @@ public class BotSelectScreen : MonoBehaviour
 
     private void Update() {
     // check to see if we can start counting down
-    if (!isCountingDown && GameManager.Instance.PlayerData.Count == ReadyPlayerCount && ReadyPlayerCount > 1)
+    if (!isCountingDown && GameManager.Instance.PlayerData.Count == ReadyPlayerCount && ReadyPlayerCount > 0)
             StartCountdown();
         // check to see if we should stop countdown
         if (isCountingDown && GameManager.Instance.PlayerData.Count != ReadyPlayerCount)

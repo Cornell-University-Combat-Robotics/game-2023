@@ -16,7 +16,8 @@ public class GameManager : MonoBehaviour
     HLNR,
     TestBox,
     TestLabyrinth,
-    MannysDomain
+    MannysDomain,
+    LanceStage,
   }
 
   public Stage CurrentStage;
