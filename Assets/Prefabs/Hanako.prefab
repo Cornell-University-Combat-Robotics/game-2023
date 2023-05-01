@@ -328,6 +328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HanakoAnimator: {fileID: 1433231308017237179}
+  Saws: {fileID: 3428415167374703060}
 --- !u!1 &3817565275355738369
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,6 +430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Damage: 5
   Sparks: {fileID: 8870522788548830574}
+  SpinnerActive: 0
 --- !u!255 &8465895450611281811
 FixedJoint2D:
   m_ObjectHideFlags: 0
@@ -444,7 +446,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.049999952, y: 0.009000063}
+  m_ConnectedAnchor: {x: 0.050000012, y: 0.009000003}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!212 &4518460868240760044

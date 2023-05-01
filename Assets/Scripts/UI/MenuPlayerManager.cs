@@ -21,6 +21,7 @@ public class MenuPlayerManager : MonoBehaviour
     Debug.Log(input);
     // get refernce to the proper UI widget
     _widget = GameObject.Find("PlayerUIs").transform.GetChild(PlayerID).GetComponent<PlayerSelectWidget>();
+    _widget.gameObject.SetActive(true);
   }
 
   // define behavior for robot selection

@@ -38,6 +38,8 @@ public class RosieGlaive : Action
     // detach weapon from joint
     _isAttached = false;
     Joint.connectedBody = null;
+    // set the hitbox
+    Weapon.GetComponent<Spinner>().SpinnerActive = true;
     // give weapon some forward force and massive torque
     Weapon.drag = 0f;
     Weapon.angularDrag = 0f;

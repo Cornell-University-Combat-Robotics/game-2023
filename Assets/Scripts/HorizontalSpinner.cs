@@ -6,6 +6,7 @@ public class HorizontalSpinner : Action
 {
 
   public WheelJoint2D SpinnerMotor;
+  public Spinner Spinner;
   public float SpinnerSpeed = 2000f;
 
   private float _targetSpeed = 0f;
@@ -13,6 +14,7 @@ public class HorizontalSpinner : Action
   public override void Execute()
   {
     _targetSpeed = SpinnerSpeed;
+    Spinner.SpinnerActive = true;
   }
 
   public void FixedUpdate()
@@ -26,5 +28,6 @@ public class HorizontalSpinner : Action
   public override void Unexecute()
   {
     _targetSpeed = 0f;
+    Spinner.SpinnerActive = false;
   }
 }
