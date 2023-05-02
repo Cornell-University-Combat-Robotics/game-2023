@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HLNRPrefab: {fileID: 6984166285480493470, guid: 093f9c7d72ef7ee4b95c5312694e1015, type: 3}
   TestBoxPrefab: {fileID: 6984166285480493470, guid: ad6b7a60a85ff624997bc4f1d383b92f, type: 3}
+  MetalPipeWorldPrefab: {fileID: 6984166285480493470, guid: 1be3f3da6382dd14a852008ad05613fa, type: 3}
   LanceStagePrefab: {fileID: 6984166285480493470, guid: 6c3e14d8f6343cb4ab23207d0f3d92a3, type: 3}
 --- !u!4 &167576780
 Transform:

@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     HLNR,
     TestBox,
     TestLabyrinth,
-    MannysDomain,
+    MetalPipeWorld,
     LanceStage,
   }
 
