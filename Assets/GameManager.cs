@@ -56,6 +56,7 @@ public class GameManager : MonoBehaviour
     public Sprite SteveSprite;
     public Sprite HanakoSprite;
     public Sprite RichardSprite;
+    public Sprite MannySprite;
 
     public static Dictionary<Robot, RobotDataEntry> RobotData;
 
