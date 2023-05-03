@@ -9,13 +9,13 @@ public class Explosion : MonoBehaviour
     var otherStatus = other.GetComponent<BotStatus>();
     if (otherStatus)
     {
-      otherStatus.TakeDamage(25);
+      otherStatus.TakeDamage(15);
     }
     var otherBody = other.GetComponent<Rigidbody2D>();
     if (otherBody)
     {
       var force = other.transform.position - transform.position;
-      force *= 10000f;
+      force *= 2500f;
       otherBody.AddForce(force);
     }
   }
