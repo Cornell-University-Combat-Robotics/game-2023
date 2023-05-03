@@ -103,7 +103,8 @@ public class GameManager : MonoBehaviour
             {Robot.Steve, new RobotDataEntry("Steve", "Fierce bot wielding two pickaxes inspired by a certain game about blocks. Steve's pickaxes pierce through everything.", "Mine", "Craft", SteveSprite)},
             {Robot.Hanako, new RobotDataEntry("Hanako", "Ghosty blue bot with four side-by-side vertical saws. Hanako keeps opponents close to their saws.", "V.Spinner", "Ghostly Warp", HanakoSprite)},
             {Robot.Richard, new RobotDataEntry("Richard", "Fiery orange striped vertical spinner. Richard channels the energy of an angry tiger", "V.Spinner", "Tiger trap", RichardSprite)},
-            {Robot.Manny, new RobotDataEntry("Manny", "Ftiger", "Vhammerer", "ramp", RichardSprite)}
+            {Robot.Manny, new RobotDataEntry("Manny", "Icey bot rocking two tusks and a giant red hammer. He might be tiny but he is mighty.", "Slam", "Ram", MannySprite)}
+            
         };
 
         DontDestroyOnLoad(gameObject);

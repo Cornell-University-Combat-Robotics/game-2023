@@ -7,7 +7,7 @@ public class HanakoSaws : Action
 
     [SerializeField]
     public Animator HanakoAnimator;
-  public Spinner Saws;
+    public Spinner Saws;
 
     public override void Execute()
     {

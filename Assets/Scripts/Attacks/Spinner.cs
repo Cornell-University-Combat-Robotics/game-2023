@@ -7,6 +7,7 @@ public class Spinner : MonoBehaviour
 {
 
   public float Damage = 5f;// damage per contact with spinner
+  public float Knockback = 1f;
   public ParticleSystem Sparks;
 
   public bool SpinnerActive = false;
@@ -31,6 +32,12 @@ public class Spinner : MonoBehaviour
       if (botStatus)
       {
         botStatus.TakeDamage(Damage);
+      }
+      // check if there's a body to move
+      var body = other.gameObject.GetComponent<Rigidbody2D>();
+      if (body)
+      {
+        body.AddForce((other.transform.position - transform.position) * Knockback * 800f);
       }
     }
   }

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class BotSelectScreen : MonoBehaviour
 {
     public Text CountdownText;
+    public Text CurrentStageText;
 
     public int ReadyPlayerCount;
 
@@ -15,6 +16,7 @@ public class BotSelectScreen : MonoBehaviour
     private void Awake() {
         // disable countdown text until time to start
         CountdownText.gameObject.SetActive(false);
+        CurrentStageText.text = GameManager.Instance.CurrentStage.ToString();
     }
 
     public void StartCountdown()
@@ -41,7 +43,7 @@ public class BotSelectScreen : MonoBehaviour
         if (isCountingDown)
         {
             countdown -= Time.deltaTime;
-      CountdownText.text = countdown.ToString().Substring(0, 3);
+            CountdownText.text = "Starting In " + countdown.ToString().Substring(0, 3);
             if (countdown < 0)
             {
                 // start game
