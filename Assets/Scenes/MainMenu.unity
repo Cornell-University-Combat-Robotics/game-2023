@@ -638,7 +638,7 @@ MonoBehaviour:
   FlorenceSprite: {fileID: 21300000, guid: 9b5dfff0b77065c478410042820c27f2, type: 3}
   SteveSprite: {fileID: 21300000, guid: ed3ae5217b57e6f4fa46461ff17d0ec2, type: 3}
   HanakoSprite: {fileID: 21300000, guid: 92038c34bf0ab2f4e9c150853f8856bf, type: 3}
-  RichardSprite: {fileID: 0}
+  RichardSprite: {fileID: 21300000, guid: 137d9d317d2338245b603e87e994e409, type: 3}
 --- !u!4 &746513431
 Transform:
   m_ObjectHideFlags: 0
@@ -731,7 +731,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 860416963}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
