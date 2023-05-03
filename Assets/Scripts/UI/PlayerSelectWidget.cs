@@ -71,7 +71,7 @@ public class PlayerSelectWidget : MonoBehaviour
     {
       // lock in
       _lockedIn = true;
-      SelectionController.ReadyPlayerCount += 1;
+      SelectionController.SetReadyPlayerCount(SelectionController.ReadyPlayerCount + 1);
       OKPanel.SetActive(true);
     }
     return OrderedRobots[SelectedRobotIdx];
@@ -82,7 +82,7 @@ public class PlayerSelectWidget : MonoBehaviour
     if (_lockedIn)
     {
       _lockedIn = false;
-      SelectionController.ReadyPlayerCount -= 1;
+      SelectionController.SetReadyPlayerCount(SelectionController.ReadyPlayerCount - 1);
       OKPanel.SetActive(false);
     }
   }

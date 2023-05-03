@@ -5,6 +5,7 @@ using UnityEngine;
 public class MannySlam : Action
 {
 
+  public ParticleSystem HammerEffects;
     // references to hammers
     public List<Hammer> Hammers;
 
@@ -23,10 +24,12 @@ public class MannySlam : Action
 
     IEnumerator ToggleHammers()
     {
+    yield return new WaitForSeconds(0.25f);
         foreach (Hammer hammer in Hammers)
         {
             hammer.ToggleHammer(true);
         }
+    HammerEffects.Play();
         yield return new WaitForFixedUpdate();
         foreach (Hammer hammer in Hammers)
         {

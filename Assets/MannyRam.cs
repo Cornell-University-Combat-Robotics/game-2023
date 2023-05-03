@@ -26,6 +26,7 @@ public class MannyRam : Action
     }
 
     public override void Execute() {
+    Debug.Log("Manny rammed");
         var movement = transform.parent.gameObject.GetComponent<BotMovement>();
         var direction = transform.TransformDirection(2000 * Vector2.up);
         movement.AddImpactForce(direction);
@@ -42,7 +43,7 @@ public class MannyRam : Action
             var force = other.transform.position - transform.parent.position;
             force *= 2000;
             otherBotMovement.AddImpactForce(force);
-            var torque = Random.Range(-1, 1) * 100;
+      var torque = Random.Range(-1, 1) * 10000f;
             otherBotMovement.AddImpactTorque(torque);
         }
 

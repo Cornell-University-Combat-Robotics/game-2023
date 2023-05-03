@@ -52,4 +52,9 @@ public class MenuPlayerManager : MonoBehaviour
       _widget.UnLockIn();
   }
 
+  public void SelectShadowRichard(InputAction.CallbackContext ctc)
+  {
+    GameManager.Instance.PlayerData[PlayerID].robot = GameManager.Robot.ShadowRichard;
+  }
+
 }

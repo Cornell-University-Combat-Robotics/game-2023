@@ -146,7 +146,7 @@
                 },
                 {
                     "name": "2D Vector",
-                    "id": "72060bb9-6958-4b39-8502-545b49e6f819",
+                    "id": "ae69a46f-f30f-4081-86ad-73ba98ce671b",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -157,8 +157,8 @@
                 },
                 {
                     "name": "up",
-                    "id": "7ab59385-78b6-4f26-8044-e9a8e2f3e24c",
-                    "path": "<HID::USB Gamepad >/button6",
+                    "id": "95934b9f-d583-4902-b64f-e1bc55350e1c",
+                    "path": "<HID::USB Gamepad >/trigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "Joystick",
@@ -168,33 +168,33 @@
                 },
                 {
                     "name": "down",
-                    "id": "c30a6ab1-565c-4e66-bfb8-417f9094b7ea",
-                    "path": "<HID::USB Gamepad >/button5",
+                    "id": "8002ca1e-1e53-4890-bbb1-de83a42afdba",
+                    "path": "<HID::USB Gamepad >/button2",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Joystick",
+                    "groups": "",
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "left",
-                    "id": "284bcc1a-9b48-4498-8e26-5beba64babb9",
+                    "id": "e810fcb4-7d65-485e-b608-da9f631bf08c",
                     "path": "<HID::USB Gamepad >/stick/left",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Joystick",
+                    "groups": "",
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "right",
-                    "id": "8b0408df-1049-40ac-844c-0788f4c51489",
+                    "id": "2ad91266-d053-4836-8715-6e8b303fc1bc",
                     "path": "<HID::USB Gamepad >/stick/right",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Joystick",
+                    "groups": "",
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -234,6 +234,17 @@
                 },
                 {
                     "name": "",
+                    "id": "fe62bdb4-35cc-48c7-998b-73cb110659bd",
+                    "path": "<HID::USB Gamepad >/button6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Main Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "e6af8b73-1fcd-40ee-966f-087b8e2a19c9",
                     "path": "<Keyboard>/f",
                     "interactions": "",
@@ -261,6 +272,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Joystick",
+                    "action": "Secondary Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4d736e89-1a16-4e7d-8730-6b2102a6b7e8",
+                    "path": "<HID::USB Gamepad >/button5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Secondary Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -302,6 +324,15 @@
                     "name": "Back",
                     "type": "Button",
                     "id": "e11712a2-2636-4cbd-84d3-75b2260003c1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SelectShadowRichard",
+                    "type": "Button",
+                    "id": "d8725d3f-014f-4a6f-aeeb-eef33559d58d",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -410,6 +441,28 @@
                 },
                 {
                     "name": "",
+                    "id": "8a5d6360-6388-4aa0-a611-d2737612381d",
+                    "path": "<HID::USB Gamepad >/button10",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "89c71537-61c8-4881-9dbb-e0538cc01360",
+                    "path": "<HID::USB Gamepad >/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "65786541-671d-4789-898d-b93444928282",
                     "path": "<Keyboard>/escape",
                     "interactions": "",
@@ -438,6 +491,39 @@
                     "processors": "",
                     "groups": "Joystick",
                     "action": "Back",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fae23618-536c-4751-a548-39312c21ea7a",
+                    "path": "<HID::USB Gamepad >/button2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Back",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b7a9de7e-45a1-4126-8b47-3ba3e26efe33",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelectShadowRichard",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "538b8259-3813-4f7b-a6cd-56bd15c06a3f",
+                    "path": "<HID::USB Gamepad >/button9",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelectShadowRichard",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

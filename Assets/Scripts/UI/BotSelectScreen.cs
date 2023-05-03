@@ -7,13 +7,29 @@ public class BotSelectScreen : MonoBehaviour
 {
     public Text CountdownText;
     public Text CurrentStageText;
+  public Text PressAnyButtonToJoinText;
 
-    public int ReadyPlayerCount;
+  public int ReadyPlayerCount { get; private set; }
 
     private bool isCountingDown = false;
     private float countdown = 0f;
 
-    private void Awake() {
+  public void SetReadyPlayerCount(int to)
+  {
+    ReadyPlayerCount = to;
+    Debug.Log("oop");
+    if (ReadyPlayerCount <= 1)
+    {
+      PressAnyButtonToJoinText.gameObject.SetActive(true);
+    }
+    else
+    {
+      PressAnyButtonToJoinText.gameObject.SetActive(false);
+    }
+  }
+
+  private void Awake()
+  {
         // disable countdown text until time to start
         CountdownText.gameObject.SetActive(false);
         CurrentStageText.text = GameManager.Instance.CurrentStage.ToString();

@@ -243,6 +243,9 @@ MonoBehaviour:
   Actions:
   - {fileID: 4061442222218541470}
   - {fileID: 7246845497859833376}
+  Cooldowns:
+  - 0
+  - 0
 --- !u!235 &6685568596807025066
 WheelJoint2D:
   m_ObjectHideFlags: 0
@@ -515,7 +518,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d49f4f00d20421429c504941743a4e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 5
+  Damage: 8
+  Knockback: 1
   Sparks: {fileID: 8652343101125372435}
   SpinnerActive: 0
 --- !u!1 &8283477874315272319

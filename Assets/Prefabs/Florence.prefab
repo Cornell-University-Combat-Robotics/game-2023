@@ -473,6 +473,9 @@ MonoBehaviour:
   Actions:
   - {fileID: 7033642239631446662}
   - {fileID: 8478931595057341950}
+  Cooldowns:
+  - 0
+  - 0
 --- !u!95 &7331819149057640790
 Animator:
   serializedVersion: 4
@@ -598,7 +601,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3654269445947448966
 Transform:
   m_ObjectHideFlags: 0

@@ -150,6 +150,22 @@ MonoBehaviour:
     m_ActionId: e11712a2-2636-4cbd-84d3-75b2260003c1
     m_ActionName: UI/Back[/Keyboard/escape,/XInputControllerWindows/buttonEast,/USB
       Gamepad /button3]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2767155044268822728}
+        m_TargetAssemblyTypeName: MenuPlayerManager, Assembly-CSharp
+        m_MethodName: SelectShadowRichard
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: d8725d3f-014f-4a6f-aeeb-eef33559d58d
+    m_ActionName: UI/SelectShadowRichard[/Keyboard/p,/USB Gamepad /button9]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: UI

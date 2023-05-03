@@ -515,6 +515,7 @@ MonoBehaviour:
   StevePrefab: {fileID: 3822880682379117888, guid: 8c986b64274a136489e2bb539d54ebec, type: 3}
   RichardPrefab: {fileID: 286309953401345920, guid: 517f6e76a5df6ed49bbb2e91cce5f03d, type: 3}
   MannyPrefab: {fileID: 3822880682379117888, guid: 178b500a2bb8c7f458faa7c99f2d4efa, type: 3}
+  ShadowRichardPrefab: {fileID: 286309953401345920, guid: f3ac2cc98ca69884599fa713b98601ef, type: 3}
 --- !u!1 &2037272725
 GameObject:
   m_ObjectHideFlags: 0

@@ -331,6 +331,9 @@ MonoBehaviour:
   Actions:
   - {fileID: 5961220961834313669}
   - {fileID: 3002027925045505287}
+  Cooldowns:
+  - 0
+  - 3
 --- !u!60 &2384577029641597116
 PolygonCollider2D:
   m_ObjectHideFlags: 0

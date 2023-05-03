@@ -27,6 +27,7 @@ public class RosieGlaive : Action
     // try to return to rosie
     Weapon.transform.position = Joint.transform.position;
     Joint.connectedBody = Weapon;
+    Weapon.gameObject.transform.localScale = new Vector2(1, 1);
     _isAttached = true;
     camera.Targets.Remove(Weapon.transform);
   }
@@ -37,6 +38,7 @@ public class RosieGlaive : Action
     if (!_isAttached) return;
     // detach weapon from joint
     _isAttached = false;
+    Weapon.gameObject.transform.localScale = new Vector2(2, 2);
     Joint.connectedBody = null;
     // set the hitbox
     Weapon.GetComponent<Spinner>().SpinnerActive = true;

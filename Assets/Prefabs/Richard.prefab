@@ -267,6 +267,9 @@ MonoBehaviour:
   Actions:
   - {fileID: 7716016891190157394}
   - {fileID: 6642185147631395201}
+  Cooldowns:
+  - 0
+  - 0
 --- !u!114 &8743805454271750980
 MonoBehaviour:
   m_ObjectHideFlags: 0

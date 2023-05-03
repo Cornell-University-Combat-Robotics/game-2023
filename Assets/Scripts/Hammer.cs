@@ -8,6 +8,7 @@ public class Hammer : MonoBehaviour
 
     public int HammerForce = 1500;
     public int HammerTorqueNoise = 100;
+  public int HammerDamage = 10;
 
     private Collider2D _collider;
 
@@ -31,5 +32,11 @@ public class Hammer : MonoBehaviour
             var torque = Random.Range(-1, 1) * HammerTorqueNoise;
             otherBotMovement.AddImpactTorque(torque);
         }
+    // deal damage
+    var otherBotStatus = other.GetComponent<BotStatus>();
+    if (otherBotStatus)
+    {
+      otherBotStatus.TakeDamage(HammerDamage);
+    }
      }
 }

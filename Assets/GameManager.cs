@@ -30,7 +30,8 @@ public class GameManager : MonoBehaviour
         Steve,
         Hanako,
         Richard,
-        Manny
+    Manny,
+    ShadowRichard
     }
 
     public struct RobotDataEntry {
@@ -104,8 +105,8 @@ public class GameManager : MonoBehaviour
             {Robot.Steve, new RobotDataEntry("Steve", "Fierce bot wielding two pickaxes inspired by a certain game about blocks. Steve's pickaxes pierce through everything.", "Mine", "Craft", SteveSprite)},
             {Robot.Hanako, new RobotDataEntry("Hanako", "Ghosty blue bot with four side-by-side vertical saws. Hanako keeps opponents close to their saws.", "V.Spinner", "Ghostly Warp", HanakoSprite)},
             {Robot.Richard, new RobotDataEntry("Richard", "Fiery orange striped vertical spinner. Richard channels the energy of an angry tiger", "V.Spinner", "Tiger trap", RichardSprite)},
-            {Robot.Manny, new RobotDataEntry("Manny", "Icey bot rocking two tusks and a giant red hammer. He might be tiny but he is mighty.", "Slam", "Ram", MannySprite)}
-            
+            {Robot.Manny, new RobotDataEntry("Manny", "Icey bot rocking two tusks and a giant red hammer. He might be tiny but he is mighty.", "Slam", "Ram", MannySprite)},
+            {Robot.ShadowRichard, new RobotDataEntry("Richard?", "Fieasdary orwr3ange str132iped verfdsgtical spgginner. Richard channels the energy of a demon.", "???", "No Escape", RichardSprite)},
         };
 
         DontDestroyOnLoad(gameObject);
