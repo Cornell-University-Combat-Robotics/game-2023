@@ -249,7 +249,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 4, z: -1}
+  m_LocalPosition: {x: 1, y: 4, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -293,7 +293,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611338700}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.31251574, y: -0.69132376, z: -0.071367525}
+  m_LocalPosition: {x: 0.31251574, y: -0.69132376, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -513,6 +513,7 @@ MonoBehaviour:
   FlorencePrefab: {fileID: 7331819149057640750, guid: e6a6198769250e44fb9346130ab6349a, type: 3}
   HanakoPrefab: {fileID: 1374153795128381934, guid: 76549eb0fe9342e45a81da8225412669, type: 3}
   StevePrefab: {fileID: 3822880682379117888, guid: 8c986b64274a136489e2bb539d54ebec, type: 3}
+  RichardPrefab: {fileID: 286309953401345920, guid: 517f6e76a5df6ed49bbb2e91cce5f03d, type: 3}
 --- !u!1 &2037272725
 GameObject:
   m_ObjectHideFlags: 0
