@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3822880682379117888, guid: 8c986b64274a136489e2bb539d54ebec, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3822880682379117892, guid: 8c986b64274a136489e2bb539d54ebec, type: 3}
       propertyPath: m_RootOrder
@@ -639,6 +639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Damage: 5
   Sparks: {fileID: 1277422626}
+  SpinnerActive: 0
 --- !u!50 &1127934751 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 329722602094441665, guid: 0974c89c1bdccfd4d8fbed9cf9911b61, type: 3}
@@ -1138,6 +1139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpinnerMotor: {fileID: 966596156}
+  Spinner: {fileID: 0}
   SpinnerSpeed: 2000
 --- !u!1 &1922473334
 GameObject:
@@ -1484,7 +1486,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1159915324786941587, guid: 0974c89c1bdccfd4d8fbed9cf9911b61, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1159915324786941588, guid: 0974c89c1bdccfd4d8fbed9cf9911b61, type: 3}
       propertyPath: TurnSpeed

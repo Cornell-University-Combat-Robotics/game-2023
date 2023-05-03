@@ -11,6 +11,7 @@ public class PlayerSpawner : MonoBehaviour
     public GameObject FlorencePrefab;
     public GameObject HanakoPrefab;
     public GameObject StevePrefab;
+    public GameObject MannyPrefab;
 
     private Dictionary<GameManager.Robot, GameObject> robotPrefabs;
     // ... and so on. TODO: make this better.
@@ -22,7 +23,8 @@ public class PlayerSpawner : MonoBehaviour
             {GameManager.Robot.Rosie, RosiePrefab},
             {GameManager.Robot.Florence, FlorencePrefab},  
             {GameManager.Robot.Hanako, HanakoPrefab},          
-            {GameManager.Robot.Steve, StevePrefab}          
+            {GameManager.Robot.Steve, StevePrefab},
+            {GameManager.Robot.Manny, MannyPrefab}          
         };
     }
 
