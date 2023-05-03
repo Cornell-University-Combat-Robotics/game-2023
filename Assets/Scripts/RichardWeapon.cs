@@ -7,29 +7,19 @@ public class RichardWeapon : Action
 
     [SerializeField]
     public Animator Richard;
+    public Spinner RichardSpinner;
 
-    // Start is called before the first frame update
-    private void Start()
-    {
-        Debug.Log("Hello");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public override void Execute()
     {
-        Debug.Log("Activating weapon");
+        RichardSpinner.SpinnerActive = true;
         Richard.SetBool("Activate Weapon", true);
         
     }
 
     public override void Unexecute()
     {
-        Debug.Log("Deactivating weapon");
+        RichardSpinner.SpinnerActive = false;
         Richard.SetBool("Activate Weapon", false);
         
     }
