@@ -11,10 +11,11 @@ public class HanakoBlink : Action
   public override void Execute()
   {
     Effects.Play();
-    RaycastHit hit;
-    // Does the ray intersect any objects excluding the player layer
-    if (Physics.Raycast(transform.position, transform.TransformDirection(Vector2.up), out hit, BlinkDist))
+    Debug.DrawRay(transform.position, transform.TransformDirection(Vector2.up) * BlinkDist, Color.green, 1, depthTest:false);
+    RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.TransformDirection(Vector2.up), BlinkDist);
+    if (hit.collider != null)
     {
+      Debug.Log(hit.collider);
       transform.parent.position = hit.point;
     }
     else

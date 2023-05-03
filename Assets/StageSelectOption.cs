@@ -22,5 +22,6 @@ public class StageSelectOption : MonoBehaviour
     Color tempColor = image.color;
     tempColor.a = to ? 1f : 0.5f;
     image.color = tempColor;
+    transform.GetChild(0).gameObject.SetActive(to);
   }
 }
